@@ -1,0 +1,33 @@
+{
+  "name": "angular-blog",
+  "description": "AngularJS based blog. Loftschool courses dz",
+  "main": "",
+  "authors": [
+    "Artem Danshin"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-resource": "^1.5.0",
+    "angular-sanitize": "^1.5.0",
+    "angular-animate": "^1.5.0",
+    "angular-cookies": "^1.5.0",
+    "angular-touch": "^1.5.0",
+    "angular-loader": "^1.5.0",
+    "angular-i18n": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "bootstrap-material-design": "^0.5.8"
+  }
+}
