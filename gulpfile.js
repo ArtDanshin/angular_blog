@@ -24,6 +24,14 @@ gulp.task('js', function(){
 	.pipe(gulp.dest('builds/dev'));
 });
 
+gulp.task('css', function(){
+	gulp.src([
+		'app/bower/angular/angular-csp.css'
+	])
+	.pipe(concat('theme.css'))
+	.pipe(gulp.dest('builds/dev'));
+});
+
 gulp.task('scss', function(){
 	gulp.src([
 		'app/scss/**/*.scss'
@@ -49,6 +57,7 @@ gulp.task('webserver', function(){
 gulp.task('default', [
 	'libsjs',
 	'js',
+	'css',
 	'scss',
 	'watch',
 	'webserver'
