@@ -18,7 +18,8 @@ gulp.task('libsjs', function(){
 
 gulp.task('js', function(){
 	gulp.src([
-		'app/js/**/*.js'
+		'app/home/**/*.js',
+		'app/users/**/*.js',
 	])
 	.pipe(concat('app.js'))
 	.pipe(gulp.dest('builds/dev'));
@@ -34,7 +35,8 @@ gulp.task('css', function(){
 
 gulp.task('scss', function(){
 	gulp.src([
-		'app/scss/**/*.scss'
+		'app/home/**/*.scss',
+		'app/users/**/*.scss',
 	])
 	.pipe(scss())
 	.pipe(concat('app.css'))
