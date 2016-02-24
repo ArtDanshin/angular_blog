@@ -44,8 +44,8 @@ gulp.task('scss', function(){
 });
 
 gulp.task('watch', function(){
-	gulp.watch('app/js/**/*.js', ['js']);
-	gulp.watch('app/scss/**/*.scss', ['scss']);
+	gulp.watch('app/**/*.js', ['js']);
+	gulp.watch('app/**/*.scss', ['scss']);
 });
 
 gulp.task('webserver', function(){
