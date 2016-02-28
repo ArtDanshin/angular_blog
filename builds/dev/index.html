@@ -6,15 +6,17 @@
 	<link rel="stylesheet" href="app.css">
 	<link rel="stylesheet" href="theme.css">
 </head>
-<body ng-cloak ng-controller="MainCtrl">
+<body ng-cloak ng-controller="MainCtrl as mc">
 	
 	<h1>Hello AngularJS {{message}}</h1>
-
+	<h2>{{mc.message}}</h2>
 	{{ 2 + 2 + 5}}
 
 	<input type="text" ng-model="message">
-
 	<script src="libs.js"></script>
 	<script src="app.js"></script>	
+	<script>
+	// 	angular.bootstrap(document.getElementById('app'), ['ag_blog'])
+	</script>
 </body>
 </html>

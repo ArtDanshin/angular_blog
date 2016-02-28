@@ -20,6 +20,7 @@ gulp.task('js', function(){
 	gulp.src([
 		'app/home/**/*.js',
 		'app/users/**/*.js',
+		'app/*.js'
 	])
 	.pipe(concat('app.js'))
 	.pipe(gulp.dest('builds/dev'));
