@@ -22,6 +22,7 @@ gulp.task('js', function(){
 		'app/home/**/*.js',
 		'app/users/**/*.js'
 	])
+	.pipe(uglify())
 	.pipe(concat('app.js'))
 	.pipe(gulp.dest('builds/dev'));
 });
