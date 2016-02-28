@@ -1,3 +1,0 @@
-!function(){"use strict";function o(){console.log("ag_blog::config")}function n(o){console.log("ag_blog::run")}angular.module("ag_blog",["ag_blog.users","ui.router"]).config(o).run(n),n.$inject=["$rootScope"]}();
-
-!function(){"use strict";angular.module("ag_blog.users",["ui.router"]).controller("MainCtrl",["$scope",function(o){console.log("ng5::MainCtrl $scope=",o),o.message="Привет",this.message="Привет от this!"}]).config(function(){})}();

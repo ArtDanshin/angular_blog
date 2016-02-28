@@ -13,8 +13,8 @@
 			console.log('ag_blog::config');
 		};
 
-		runAgBlog.$inject = ['$rootScope'];
 		function runAgBlog($rootScope){
-			console.log('ag_blog::run');
+			"ngInject";
+			console.log('ag_blog::run=', $rootScope);
 		};
 })();
