@@ -28,7 +28,8 @@ gulp.task('js', function(){
 
 gulp.task('css', function(){
 	gulp.src([
-		'app/bower/angular/angular-csp.css'
+		'app/bower/angular/angular-csp.css',
+		'app/bower/bootstrap/dist/css/bootstrap.css'
 	])
 	.pipe(concat('theme.css'))
 	.pipe(gulp.dest('builds/dev'));
