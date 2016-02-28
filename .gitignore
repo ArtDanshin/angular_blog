@@ -2,4 +2,4 @@ app/bower
 node_modules
 .DS_Store
 /builds
-!/builds/dev/index.html
+!/builds/dev/**/*.html

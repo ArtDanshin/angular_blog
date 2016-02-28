@@ -3,6 +3,7 @@
 
 	angular
 		.module('ag_blog', [
+			'ag_blog.home',
 			'ag_blog.users',
 			'ui.router',
 		])
@@ -14,7 +15,6 @@
 		};
 
 		function runAgBlog($rootScope){
-			"ngInject";
 			console.log('ag_blog::run=', $rootScope);
 		};
 })();

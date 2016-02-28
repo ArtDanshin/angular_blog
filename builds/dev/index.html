@@ -21,8 +21,8 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#users">Users</a></li>
+					<li ui-sref-active="active"><a ui-sref="Home">Home</a></li>
+					<li ui-sref-active="active"><a ui-sref="Users">Users</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -33,6 +33,8 @@
 			</div><!--/.nav-collapse -->
 		</div>
 	</nav>
+
+	<div class="container" ui-view></div>
 	<!-- <h1>Hello AngularJS {{message}}</h1>
 	<h2>{{mc.message}}</h2>
 	{{ 2 + 2 + 5}}
@@ -41,7 +43,7 @@
 	<script src="libs.js"></script>
 	<script src="app.js"></script>	
 	<script>
-	// 	angular.bootstrap(document.getElementById('app'), ['ag_blog'])
+		angular.bootstrap(document.getElementById('app'), ['ag_blog'])
 	</script>
 </body>
 </html>
