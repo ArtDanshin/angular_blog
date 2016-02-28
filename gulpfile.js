@@ -39,8 +39,9 @@ gulp.task('css', function(){
 
 gulp.task('scss', function(){
 	gulp.src([
+		'app/*.scss',
 		'app/home/**/*.scss',
-		'app/users/**/*.scss',
+		'app/users/**/*.scss'
 	])
 	.pipe(scss())
 	.pipe(concat('app.css'))
