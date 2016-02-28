@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 gulp.task('libsjs', function(){
 	gulp.src([
 		'app/bower/angular/angular.js',
-		'app/bower/angular-route/angular-route.js'
+		'app/bower/angular-ui-router/release/angular-ui-router.js'
 		])
 	.pipe(concat('libs.js'))
 	.pipe(gulp.dest('builds/dev'))
