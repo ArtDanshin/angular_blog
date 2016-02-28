@@ -18,9 +18,9 @@ gulp.task('libsjs', function(){
 
 gulp.task('js', function(){
 	gulp.src([
+		'app/*.js',
 		'app/home/**/*.js',
-		'app/users/**/*.js',
-		'app/*.js'
+		'app/users/**/*.js'
 	])
 	.pipe(concat('app.js'))
 	.pipe(gulp.dest('builds/dev'));
