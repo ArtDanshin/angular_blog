@@ -5,6 +5,11 @@
 		'ui.router',
 	])
 	.config(configHome)
+	.controller('HomeCtrl', homeController)
+
+	function homeController(){
+
+	};
 
 	function configHome($stateProvider){
 		$stateProvider
