@@ -11,7 +11,9 @@ var gulp = require('gulp'),
 gulp.task('libsjs', function(){
 	gulp.src([
 		'app/bower/angular/angular.js',
-		'app/bower/angular-ui-router/release/angular-ui-router.js'
+		'app/bower/angular-ui-router/release/angular-ui-router.js',
+		'app/bower/firebase/firebase.js',
+		'app/bower/angularfire/dist/angularfire.js'
 		])
 	.pipe(concat('libs.js'))
 	.pipe(gulp.dest('builds/dev'))
