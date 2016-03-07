@@ -6,16 +6,20 @@
 	])
 	.config(configHome)
 	.controller('HomeCtrl', homeController)
+	.constant('SOME_VAL', 'Некоторе значение')
 
-	function homeController(){
-
+	function homeController($scope, SOME_VAL){
+		var s = this;
+		s.pageName = 'home';
 	};
 
 	function configHome($stateProvider){
 		$stateProvider
 			.state('Home', {
 				url: '/',
-				templateUrl: 'home/index.html'
+				templateUrl: 'home/index.html',
+				controller: 'HomeCtrl',
+				controllerAs: 'hc'
 			});
 	}
 })();
