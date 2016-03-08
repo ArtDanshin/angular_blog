@@ -22,6 +22,7 @@ gulp.task('libsjs', function(){
 gulp.task('js', function(){
 	gulp.src([
 		'app/*.js',
+		'app/dbc/**/*.js',
 		'app/home/**/*.js',
 		'app/users/**/*.js'
 	])
@@ -55,6 +56,7 @@ gulp.task('scss', function(){
 
 gulp.task('watch', function(){
 	gulp.watch('app/*.js', ['js']);
+	gulp.watch('app/dbc/*.js', ['js']);
 	gulp.watch('app/users/*.js', ['js']);
 	gulp.watch('app/home/*.js', ['js']);
 	gulp.watch('app/**/*.scss', ['scss']);
