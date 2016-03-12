@@ -24,7 +24,8 @@ gulp.task('js', function(){
 		'app/*.js',
 		'app/dbc/**/*.js',
 		'app/home/**/*.js',
-		'app/users/**/*.js'
+		'app/users/**/*.js',
+		'app/auth/**/*.js'
 	])
 	.pipe(plumber())
 	.pipe(ngAnnotate())
@@ -59,6 +60,7 @@ gulp.task('watch', function(){
 	gulp.watch('app/dbc/*.js', ['js']);
 	gulp.watch('app/users/*.js', ['js']);
 	gulp.watch('app/home/*.js', ['js']);
+	gulp.watch('app/auth/*.js', ['js']);
 	gulp.watch('app/**/*.scss', ['scss']);
 });
 
