@@ -5,13 +5,16 @@
 		.module('ag_blog', [
 			'ag_blog.home',
 			'ag_blog.users',
+			'ag_blog.navbar',
+			'ag_blog.auth',
 			'ui.router',
 		])
 		.config(configAgBlog)
 		.run(runAgBlog);
 
-		function configAgBlog($urlRouterProvider, $provide){
-			console.log('ag_blog::config');
+		function configAgBlog($logProvider, $urlRouterProvider, $provide){
+			$logProvider.debugEnabled(true); // Включение console.log
+
 			$urlRouterProvider.otherwise('/');
 
 			$provide.decorator('$log', function($delegate){

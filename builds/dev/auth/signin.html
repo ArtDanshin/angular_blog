@@ -1,0 +1,13 @@
+<form name="signInForm">
+	<div class="form-group">
+		<label for="signInEmail">Email</label>
+		<input type="email" id="signInEmail" name="email" class="form-control input-lg" ng-model="ac.signinUser.email" required autofocus>
+	</div>
+	<div class="form-group">
+		<label for="signInPassword">Password</label>
+		<input type="password" id="signInPassword" name="password" class="form-control input-lg"  ng-model="ac.signinUser.password" required>
+	</div>
+	<button class="btn btn-primary btn-lg" ng-click="ac.signin()">Login</button>
+</form>
+<pre>{{ ac | json }}</pre>
+<pre>{{ signInForm | json }}</pre>

@@ -15,7 +15,7 @@
 		o.getRef = function() {
 			return ref;
 		}
-		o.getAuth = function() {
+		o.get$Auth = function() {
 			return auth;
 		}
 		o.getAuth = function() {
@@ -24,4 +24,4 @@
 
 		return obj;
 	}
-})
+})();

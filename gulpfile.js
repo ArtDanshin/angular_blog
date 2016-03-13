@@ -23,6 +23,7 @@ gulp.task('js', function(){
 	gulp.src([
 		'app/*.js',
 		'app/dbc/**/*.js',
+		'app/navbar/**/*.js',
 		'app/home/**/*.js',
 		'app/users/**/*.js',
 		'app/auth/**/*.js'
@@ -61,6 +62,7 @@ gulp.task('watch', function(){
 	gulp.watch('app/users/*.js', ['js']);
 	gulp.watch('app/home/*.js', ['js']);
 	gulp.watch('app/auth/*.js', ['js']);
+	gulp.watch('app/navbar/*.js', ['js']);
 	gulp.watch('app/**/*.scss', ['scss']);
 });
 

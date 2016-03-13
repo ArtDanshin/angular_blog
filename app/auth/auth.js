@@ -1,4 +1,4 @@
-;(function () {
+;(function(){
 	'use strict';
 
 	angular.module('ag_blog.auth', [
@@ -10,8 +10,26 @@
 
 	function AuthController($log) {
 		var s = this;
-		$log.hello('ag_blog::auth::AuthCtrl')
+		$log.log('ag_blog::auth::AuthCtrl');
 		
+		s.signinUser = {
+			email: null,
+			password: null
+		};
+
+		s.signupUser = {
+			fullName: null,
+			email: null,
+			password: null
+		};
+
+		s.signin = function(){
+
+		}
+
+		s.signup = function(){
+
+		}
 	}
 
 	function authFactory(dbc) {
@@ -28,5 +46,17 @@
 				controller: 'AuthCtrl',
 				controllerAs: 'ac'
 			})
+			.state('auth.signin', {
+				templateUrl: 'auth/signin.html',
+				url: '/signin'
+			})
+			.state('auth.signup', {
+				templateUrl: 'auth/signup.html',
+				url: '/signup'
+			})
+			.state('auth.forgot', {
+				templateUrl: 'auth/forgot.html',
+				url: '/forgot'
+			})
 	}
-})()
+})();
